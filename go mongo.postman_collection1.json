@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "68140ea4-f53f-433d-bd41-436e1e4c9820",
+		"name": "go mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insert",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"name\": \"Batman\",\n \"year\": 1998,\n \"director\": \"desconocido\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pelicula",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pelicula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"name\": \"Cristian\",\n \"year\": 1998,\n \"director\": \"desconocido\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/pelicula/65580d82202c41afc19ebbbd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pelicula",
+						"65580d82202c41afc19ebbbd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/pelicula/656672b83ab6192ac1af1de7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pelicula",
+						"656672b83ab6192ac1af1de7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
